@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocxStorageApi", "DocxStorageApi.csproj", "{E63873E5-BD08-4923-9CFA-987B70AA3738}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E63873E5-BD08-4923-9CFA-987B70AA3738}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E63873E5-BD08-4923-9CFA-987B70AA3738}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E63873E5-BD08-4923-9CFA-987B70AA3738}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E63873E5-BD08-4923-9CFA-987B70AA3738}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1EE5B0A5-7C23-4FED-A9C8-E46335CFD35C}
+	EndGlobalSection
+EndGlobal
