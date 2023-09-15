@@ -1,4 +1,5 @@
 ﻿using DocxStorageApi.BLL;
+using DocxStorageApi.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DocxStorageApi.Controllers
@@ -16,7 +17,14 @@ namespace DocxStorageApi.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromForm] string email, [FromForm] IFormFile file)
         {
-            await _docxService.SaveDocxAsync(email, file);
+	        var signedFile = new SignedFile() { Email = email, File = file };
+
+	        if (!TryValidateModel(signedFile))
+	        {
+		        return BadRequest();
+	        }
+
+			await _docxService.SaveDocxAsync(signedFile);
             return Ok();
         }
     }

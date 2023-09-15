@@ -13,11 +13,9 @@ namespace DocxStorageApi.BLL
             _docxRepository = docxRepository;
         }
 
-        public async Task SaveDocxAsync(string email, IFormFile file)
+        public async Task SaveDocxAsync(SignedFile signedFile)
         {
-            var signedFile = new SignedFile() { Email = email, File = file };
-
-            await _docxRepository.UploadDocxAsync(signedFile);
+	        await _docxRepository.UploadDocxAsync(signedFile);
         }
     }
 }
