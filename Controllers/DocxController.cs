@@ -17,7 +17,7 @@ namespace DocxStorageApi.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromForm] string email, [FromForm] IFormFile file)
         {
-	        var signedFile = new SignedFile() { Email = email, File = file };
+	        var signedFile = new SignedFile() { Email = email, File = file, FileName = file.FileName};
 
 	        if (!TryValidateModel(signedFile))
 	        {
